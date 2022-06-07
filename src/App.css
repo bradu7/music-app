@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+* {
+  /* background: linear-gradient(#F5BBB0, #655A96);
+  filter: blur(); */
+  /* background-color: #F5BBB0; */
+  backdrop-filter: blur(10px);
+  font-family: 'Montserrat';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.song {
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 20px;
+}
+
+.song img {
+  width: 22%;
+  border-radius: 50%;
+  /* padding: 20px; */
+  /* box-shadow: 5px 5px 5px rgb(231, 231, 231); */
+  box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.5);
+    
+  
+  
+  
+  
+
+}
+
+.song h2 {
+  padding: 6px 1px 1px 6px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+
+}
+
+.song h3 {
+  font-size: 16px;
+  margin-top: 2px;
+}
+.player {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer {
+  width: 50%;
+  
+  display: flex;
+  
+}
+.timer input {
+  width: 100%;
+}
+
+.timer p {
+  padding: 4px;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  width: 20%;
+  
+}
+
+.controller svg {
+  cursor: pointer;
+}
+
+.library {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 120%;
+  box-shadow: 2px 2px 50px rgb(201, 201, 201);
+  overflow: scroll;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  border-radius: 3px;
+}
+.library h2 {
+  padding-left: 20px;
+}
+.library-song {
+  display: flex; 
+  align-items: center;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+.library-song:hover {
+  background: #89CFF0;
+}
+
+.library-song img {
+  width: 32%;
+}
+
+.description {
+  padding-left: 15px;
+  line-height: 85%;
+  
+  
+}
+.description h3 {
+  font-size: 16px;
+  /* padding-top: 10px; */
+  
+  
+  
+  
+}
+.description h4 {
+  font-size: 12px;
+  /* margin-bottom: 20px; */
+  padding-bottom: 2px;
+}
+
+h3, h4 {
+  font-weight: 500;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.selected {
+  background: #4aa4ce
+}
+.nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  
+}
+
+.nav button {
+  background-color:#89CFF0;
+  cursor: pointer;
+  height: 47px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  word-spacing: 10px;
+}
+
+.nav button:hover {
+  background-color: #2f85ad;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-library {
+  transform: translateX(0);
+  opacity: 1;
 }
