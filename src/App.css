@@ -82,7 +82,7 @@
   left: 0;
   top: 0;
   width: 300px;
-  height: 120%;
+  height: 100%;
   box-shadow: 2px 2px 50px rgb(201, 201, 201);
   overflow: scroll;
   transform: translateX(-100%);
@@ -144,6 +144,7 @@ h3, h4 {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
+ 
   
 }
 
@@ -152,10 +153,12 @@ h3, h4 {
   cursor: pointer;
   height: 47px;
   padding: 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 4px;
   transition: all 0.2s ease;
   word-spacing: 10px;
+  
 }
 
 .nav button:hover {
@@ -166,4 +169,43 @@ h3, h4 {
 .active-library {
   transform: translateX(0);
   opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+  .song img {
+    width: 50%;
+  }
+  .controller {
+    width: 25%;
+  }
+  .timer {
+    width: 70%;
+  }
+  .nav button {
+    position: fixed;
+    z-index: 30;
+    
+    
+  }
+  .nav h1 {
+    opacity: 0;
+  }
+  .nav {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    width: 20%;
+    padding-right: 15px;
+    
+    
+  }
+  
+  
+  
+  .library {
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+  }
 }
