@@ -41,6 +41,7 @@ function App() {
   }
   return (
     <div className="App">
+      {/* style={{background: `linear-gradient(to right, ${currentSong.color[0]}, ${currentSong.color[1]})`}} */}
       <Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus}/>
       <Song currentSong={currentSong} />
       <Player audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentSong={currentSong} setSongInfo={setSongInfo} songInfo={songInfo} songs={songs} setCurrent={setCurrent} setSongs={setSongs}/>
