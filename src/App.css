@@ -21,16 +21,11 @@
   width: 22%;
   border-radius: 50%;
   /* padding: 20px; */
-  /* box-shadow: 5px 5px 5px rgb(231, 231, 231); 
-   box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
-    -6px -6px 12px 0 rgba(255, 255, 255, 0.5); */
-    box-shadow:10px 10px 10px #282b30, 
-              -10px -10px 10px #3a3c41c0;
-     
-  
-  
-  
-  
+    /* box-shadow:10px 10px 10px #282b30, 
+              -10px -10px 10px #3a3c41c0; */
+              box-shadow:10px 10px 10px rgba(50, 54, 59, 0.8), 
+              -10px -10px 10px rgba(59, 64, 70, 0.8);
+              border: 2px solid  rgba(59, 64, 70, 0.9);  
 
 }
 
@@ -91,8 +86,11 @@
   height: 30px;
   width: 30px;
   padding: 15px;
-  box-shadow:10px 10px 10px #282b30, 
-              -10px -10px 20px #3a3c41c0;
+  /* box-shadow:10px 10px 10px #282b30, 
+              -10px -10px 20px #3a3c41c0; */
+              box-shadow:10px 10px 10px rgba(50, 54, 59, 0.8), 
+              -10px -10px 10px rgba(59, 64, 70, 0.8);
+              border: 2px solid  rgba(59, 64, 70, 0.9);
             
 
   color: #dadbdb;
@@ -116,9 +114,8 @@
   top: 0;
   width: 300px;
   height: 99%;
-  /* box-shadow: 2px 2px 50px rgb(201, 201, 201); */
   box-shadow:10px 10px 10px #282b30, 
-              -10px -10px 20px #3a3c41c0;
+              -10px -10px 20px #3a3c41c0;          
   overflow: scroll;
   transform: translateX(-100%);
   transition: all 0.3s ease-in-out;
@@ -203,8 +200,10 @@ h3, h4 {
   transition: all 0.2s ease;
   word-spacing: 10px;
   color: #e2e1e1;
-  box-shadow:10px 10px 10px #282b30, 
-              -10px -10px 10px #3a3c41c0;
+  box-shadow:10px 10px 10px rgba(50, 54, 59, 0.8), 
+              -10px -10px 10px rgba(59, 64, 70, 0.8);
+              border: 1px solid rgba(59, 64, 70, 0.8);
+              
 }
 
 .nav button:hover {
