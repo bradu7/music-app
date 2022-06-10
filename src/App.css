@@ -255,7 +255,31 @@ h3, h4 {
   }
 }
 
+.active-library {
+ animation: bounce 0.8s linear;
+
+}
+
+@keyframes bounce {
+  20%,50%,70%,to{
+    transform: translateX(0);
+  }
+  
+  60% {
+    transform: translateX(12px);
+  }
+  70% {
+    transform: translateX(-5px);
+  }
+  90% {
+    transform: translateX(4px);
+  }
+}
+
 
 .App{
   background-color: rgba(50, 54, 59, 0.8)
+}
+.timer p {
+  color: #e2e1e1;
 }
